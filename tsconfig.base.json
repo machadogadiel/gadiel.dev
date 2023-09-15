@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@gadiel.dev/common-ui/*": ["libs/common-ui/src/*"],
+      "@gadiel.dev/ui/*": ["libs/common-ui/src/components/ui/*"],
+      "@gadiel.dev/utils": ["libs/common-ui/src/utils.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

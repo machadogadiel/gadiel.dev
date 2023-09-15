@@ -1,3 +1,13 @@
+"use client"
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@gadiel.dev/ui/dropdown-menu';
 import styles from './page.module.css';
 
 export default async function Index() {
@@ -15,6 +25,18 @@ export default async function Index() {
               <span> Hello there, </span>
               Welcome web 👋
             </h1>
+
+            <DropdownMenu>
+              <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>Profile</DropdownMenuItem>
+                <DropdownMenuItem>Billing</DropdownMenuItem>
+                <DropdownMenuItem>Team</DropdownMenuItem>
+                <DropdownMenuItem>Subscription</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           <div id="hero" className="rounded">

@@ -64,5 +64,8 @@
       }
     }
   },
+  "options": {
+    "postcssConfig": "apps/web/postcss.config.js"
+  },
   "tags": []
 }

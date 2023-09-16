@@ -49,7 +49,7 @@
   "generators": {
     "@nx/react": {
       "application": {
-        "babel": true
+        "babel": false
       },
       "library": {}
     },

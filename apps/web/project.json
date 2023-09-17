@@ -18,6 +18,13 @@
         "production": {}
       }
     },
+    "pm2": {
+      "executor": "nx-pm2-plugin:pm2-executor",
+      "options": {
+        "command": "web:serve:production",
+        "name": "pm2"
+      }
+    },
     "serve": {
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",

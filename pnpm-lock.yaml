@@ -32,9 +32,6 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
-  swc-loader:
-    specifier: ^0.2.3
-    version: 0.2.3(@swc/core@1.3.85)(webpack@5.88.2)
   tailwind-merge:
     specifier: ^1.14.0
     version: 1.14.0
@@ -139,6 +136,9 @@ devDependencies:
   nx-cloud:
     specifier: latest
     version: 16.4.0
+  nx-pm2-plugin:
+    specifier: ^1.0.5
+    version: 1.0.5(nx@16.8.1)(tslib@2.6.2)
   postcss:
     specifier: 8.4.21
     version: 8.4.21
@@ -7621,6 +7621,16 @@ packages:
       - debug
     dev: true
 
+  /nx-pm2-plugin@1.0.5(nx@16.8.1)(tslib@2.6.2):
+    resolution: {integrity: sha512-5dy0OvbrtsGOzeA+XJSIxtVO3kSH4ZqxJniKO0hi+FBwe6pllSIfqNBMBHRz0mupMB+kqzwjKuF84l5M9yEj5A==}
+    peerDependencies:
+      nx: ^16.0.0
+      tslib: 2.5.3
+    dependencies:
+      nx: 16.8.1(@swc/core@1.3.85)
+      tslib: 2.6.2
+    dev: true
+
   /nx@16.8.1(@swc/core@1.3.85):
     resolution: {integrity: sha512-K5KrwNdPz0eEe6SY5wrnhZcigjfIJkttPrIJRXNBQTE50NGcOfz1TjMXPdTWBxBCCua5PAealO3OrE8jpv+QnQ==}
     hasBin: true
@@ -8809,16 +8819,6 @@ packages:
       css-tree: 2.3.1
       csso: 5.0.5
       picocolors: 1.0.0
-
-  /swc-loader@0.2.3(@swc/core@1.3.85)(webpack@5.88.2):
-    resolution: {integrity: sha512-D1p6XXURfSPleZZA/Lipb3A8pZ17fP4NObZvFCDjK/OKljroqDpPmsBdTraWhVBqUNpcWBQY1imWdoPScRlQ7A==}
-    peerDependencies:
-      '@swc/core': ^1.2.147
-      webpack: '>=2'
-    dependencies:
-      '@swc/core': 1.3.85(@swc/helpers@0.5.1)
-      webpack: 5.88.2(@swc/core@1.3.85)
-    dev: false
 
   /symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
